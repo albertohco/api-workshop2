@@ -22,16 +22,3 @@ class Produtos:
             "preco": 2500.0,
         },
     ]
-
-    def listar_produtos(self):
-        return self.produtos
-
-    def buscar_produto(self, id):
-        for produto in self.produtos:
-            if produto["id"] == id:
-                return produto
-        return {"Status": 404, "Mensagem": "Produto não encontrado"}
-
-    def adicionar_produtos(self, produto):
-        self.produtos.append(produto)
-        return produto
