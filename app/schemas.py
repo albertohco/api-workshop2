@@ -23,5 +23,5 @@ class ProdutoSchema(BaseModel):
     # Adiciona o campo 'categoria', que deve ser um valor do Enum 'Categoria'
 
     class Config:
-        orm_mode = True
+        from_attributes = True
         # Habilita o modo ORM para facilitar a integração com ORMs como SQLAlchemy
